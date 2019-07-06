@@ -34,8 +34,6 @@ public class AnswerActivity extends AppCompatActivity implements BillingProcesso
                     "qdtXRcJ3wLBtWTr2+F5KaqcRCVVWP8wIDAQAB";
     private int numBoughtChur;
 
-    int index = (int) (Math.random() * 100)%32;
-
     public static final int ran[] = {
             R.drawable.answer_navi_001, R.drawable.answer_navi_002, R.drawable.answer_navi_003, R.drawable.answer_navi_004,
             R.drawable.answer_navi_005, R.drawable.answer_navi_006, R.drawable.answer_navi_007, R.drawable.answer_navi_008,
@@ -44,8 +42,11 @@ public class AnswerActivity extends AppCompatActivity implements BillingProcesso
             R.drawable.answer_navi_017, R.drawable.answer_navi_018, R.drawable.answer_navi_019, R.drawable.answer_navi_020,
             R.drawable.answer_navi_021, R.drawable.answer_navi_022, R.drawable.answer_navi_023, R.drawable.answer_navi_024,
             R.drawable.answer_navi_025, R.drawable.answer_navi_026, R.drawable.answer_navi_027, R.drawable.answer_navi_028,
-            R.drawable.answer_navi_029, R.drawable.answer_navi_030, R.drawable.answer_navi_031, R.drawable.answer_navi_032
+            R.drawable.answer_navi_029, R.drawable.answer_navi_030, R.drawable.answer_navi_031, R.drawable.answer_navi_032,
+            R.drawable.answer_navi_033, R.drawable.answer_navi_034, R.drawable.answer_navi_035, R.drawable.answer_navi_036
     };
+
+    int index = (int) (Math.random() * 100)%ran.length;
     int res = ran[index];
 
     private ImageButton returnButton;
